@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self</title>
+    <style>
+        .maincointainer{
+            display:inline-flex;
+            height: 600px;
+            align-items: flex-start; 
+            margin-left: 35%;
+            background-color: black;
+        }
+        .item1 {
+            background-color: bisque;
+            order:3;
+            align-self: center;
+        }
+
+        .item2 {
+            background-color: aqua;
+            order: 5;
+        }
+
+        .item3 {
+            background-color: aquamarine;
+            
+        }
+
+        .item4 {
+            background-color: pink;
+            align-self:flex-end;
+        }
+
+        .item5 {
+            background-color: blueviolet;
+            align-self:stretch;
+        }
+
+        .item6 {
+            background-color: cornflowerblue;
+        }
+
+        .item6 {
+            background-color: darkgreen;
+            align-self: flex-end;
+        }
+
+        .item7 {
+            background-color: dimgray;
+            order:-3;
+            align-self: flex-end;
+        }
+
+        .item8 {
+            background-color: goldenrod;
+        }
+        div{
+            font-size: 1.8rem;
+            border: 2px solid rgb(227, 64, 64);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincointainer">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+        <div class="item4">item4</div>
+        <div class="item5">item5</div>
+        <div class="item6">item6</div>
+        <div class="item7">item7</div>
+        <div class="item8">item8</div>
+    </div>
+</body>
+</html>

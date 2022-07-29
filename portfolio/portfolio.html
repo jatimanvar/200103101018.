@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin Portfolio</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/wow.min.js" type="text/javascript"></script>
+
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <style>
+        #darkicon {
+            font-size: 30px;
+            border-radius: 30px;
+            color: white;
+        }
+
+        #darkmode {
+            margin: auto;
+            background-color: #333333;
+            margin-top: 7px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        #arrow {
+            font-size: 50px;
+            height: 30px;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid rgb(90, 86, 86);
+            width: 200px;
+            text-align: center;
+        }
+
+        .pb-3 {
+            padding-bottom: 1rem;
+        }
+
+
+
+        #intro {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 170px;
+
+        }
+
+        #personal_info {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .inner_info {
+            border: 2px solid #2a82e8;
+            margin: 15px;
+            padding: 7px 5px;
+            border-radius: 12px;
+        }
+
+        #contact {
+            background-color: aliceblue;
+            margin-top: 130px;
+            height: 150px;
+        }
+
+        .contact_me {
+            margin-top: 60px;
+        }
+
+        #technicalskills {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .skillitem {
+            border: 2px solid #2a82e8;
+            margin: 17px;
+            border-radius: 12px;
+            padding: 7px 5px;
+        }
+
+        #skills {
+            border: #2a82e8 2px solid;
+            border-radius: 12px;
+            margin: 0px 10px;
+        }
+
+        #softs {
+            border: 2px solid #2a82e8;
+            border-radius: 20px;
+            margin: 20px;
+            margin: 30px 10px;
+        }
+
+        #softskills {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .softskill {
+            border: 2px solid #2a82e8;
+            margin: 17px;
+            border-radius: 12px;
+            padding: 7px 5px;
+        }
+
+        #educations {
+            border: #2a82e8 2px solid;
+            margin: 15px;
+            border-radius: 12px;
+        }
+
+        .intern {
+            border: #2a82e8 2px solid;
+            margin: 15px;
+            border-radius: 12px;
+        }
+
+        .dropbtn {
+            background-color: #333333;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #333333;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+        #arrow1{
+            margin-left:3px ;
+        }
+    </style>
+
+    <script type="text/javascript">
+        new WOW().init();
+
+        function dark() {
+            let element = document.body;
+            element.classList.toggle("dark-mode");
+
+            contact = document.getElementById('contact');
+            if (contact.style.backgroundColor != 'black') {
+                contact.style.backgroundColor = 'black';
+            }
+            else {
+                contact.style.backgroundColor = 'aliceblue'
+            }
+        }
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" style="z-index:1000;">
+
+            <div class="navbar-header" id="HeaderDiv">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Jatin Manvar</a>
+
+
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right" style="font-size:13px;padding-right:15px;">
+                    <li><a href="#intro"><b>Intro</b></a></li>
+                    <li><a href="#skillsl"><b>Skills</b></a></li>
+                    <li><a href="#educationsl"><b>Education</b></a></li>
+                    <li><a href="#experience"><b>Experience</b></a></li>
+                    <li><button onclick="myFunction()" class="dropbtn">Contact Me<i class="fa-solid fa-caret-down" id="arrow1"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#home">Phone:+91-9512445038</a>
+                            <a href="#about">Email:jatinmanvar28@gmail.com</a>
+                        </div>
+                    </li>
+                    <li><abbr title="Dark Mode"><button onclick="dark()" id="darkmode"><i
+                                    class="fa-solid fa-circle-half-stroke" id="darkicon"></i></abbr></button></li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="w3-container w3-center w3-animate-top wow slideInDown">
+
+        <img src="/portfolio/img/profile.avif" alt="jatin manvar" height="250" width="250"
+            style="border-radius:150px; margin-top:120px; box-shadow:0 0 100px black;">
+        <br><br>
+        <h1><b style="font-family: 'Arvo', serif;">Hello, There !</b></h1>
+        <center>
+            <h3 class="border-bottom pb-3" style="font-family: 'Arvo', serif;"><b>I'm Jatin Manvar</b></h3>
+        </center>
+        <p>Web Developer</p>
+        <p>I design and build User Interfaces</p>
+    </div>
+    <div>
+        <center><a href="#intro"><i class="fa-solid fa-caret-down" id="arrow"></i></a></center>
+    </div>
+    <div id="home">
+        <center>
+            <div class="container-fluid WOW bounceIn" id="intro" data-wow-duration="3s">
+                <h3 class="border-bottom pb-3"><b>About Me:</b></h3>
+                <p>Hello! I'm Jatin Manvar currently pursuing B.Tech from Silver Oak University, Ahmedabad.Recently, I
+                    have done summer intership at BrainyBeam Technologies and CreArt Solutions.I have a good knowledge
+                    of HTML,CSS and JavaScript and I'm constantly try to gain knowledge and implement it in practical
+                    way.</p>
+            </div>
+        </center>
+        <br><br>
+        <center>
+            <h3 class="container-fluid border-bottom pb-3"><b>Personal Information:</b></h3>
+            <div id="personal_info" class="container-fluid">
+                <div class="w3-animate-left">
+                    Full Name:
+                    <div class="inner_info">Jatin Manvar</div>
+                </div>
+                <div class="w3-animate-left">
+                    Date Of Birth:
+                    <div class="inner_info">28 February 2003</div>
+                </div>
+                <div class="w3-animate-left">
+                    Phone No.:
+                    <div class="inner_info">+91-9512445038</div>
+                </div>
+                <div class="w3-animate-left">
+                    Email:
+                    <div class="inner_info">jatinmanvar28@gmail.com</div>
+                </div>
+                <div class="w3-animate-left">
+                    Address:
+                    <div class="inner_info">AirForce Gate 2 Road,Patel Nagari, Jamnagar</div>
+                </div>
+        </center>
+    </div>
+    <br><br>
+    <center>
+        <h1 style="font-family: 'Arvo', serif;" class="border-bottom pb-3" id="skillsl"><b>Skills</b></h1>
+    </center>
+    <div id="skills" class="container-fluid">
+        <h3>Technical Skills:</h3>
+        <div id="technicalskills">
+            <div class="skillitem">HTML</div>
+            <div class="skillitem">CSS</div>
+            <div class="skillitem">BOOSTRAP 5</div>
+            <div class="skillitem">JAVASCRIPT</div>
+            <div class="skillitem">JQUERY</div>
+            <div class="skillitem">OOPS</div>
+            <div class="skillitem">PYTHON</div>
+        </div>
+    </div>
+
+    <div id="softs" class="container-fluid">
+        <h3>Soft Skills:</h3>
+        <div id="softskills">
+            <div class="softskill">Quick Learner</div>
+            <div class="softskill">Problem Solving</div>
+            <div class="softskill">Communication</div>
+        </div>
+    </div>
+    <br><br>
+    <center>
+        <h1 style="font-family: 'Arvo', serif;" class="border-bottom pb-3" id="educationsl"><b>Education</b></h1>
+    </center>
+    <center>
+        <div class="container-fluid">
+            <div id="educations">
+                <p>
+                <h4><b>SSC</b></h4>from The Sunshine School</p>
+                <p>81.67%</p>
+                <p>2017-2018</p>
+            </div>
+            <div id="educations">
+                <p>
+                <h4><b>HSC</b></h4>from Purohit Science School</p>
+                <p>72.33%</p>
+                <p>2019-2020</p>
+            </div>
+            <div id="educations">
+                <p>
+                <h4><b>B.Tech</b></h4>from Silver Oak University</p>
+                <p>8.88 spi (current)</p>
+                <p>2020-2024</p>
+            </div>
+        </div>
+    </center>
+    <br><br>
+    <center>
+        <h1 style="font-family: 'Arvo', serif;" class="border-bottom pb-3"><b>Experience</b></h1>
+    </center>
+    <center>
+        <div id="experience">
+            <div class="intern">
+                <p>
+                <h4><b>Intern</b></h4>at BrainyBeam Technologies Pvt.Ltd</p>
+                <p>Python with Django</p>
+                <p>June,2022</p>
+            </div>
+            <div class="intern">
+                <p>
+                <h4><b>Intern</b></h4>at CreArt Solutions OPC Pvt. Ltd.</p>
+                <p>Python</p>
+                <p>June-July 2022</p>
+            </div>
+        </div>
+    </center>
+
+    <div id="contact" class="container-fluid">
+        <center>
+            <p class="contact_me">phone:+91-9512445038 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                    href="mailto:jatinmanvar28@gmail.com">Email: jatinmanvar28@gmail.com</a></p>
+            <p style="color:gray;">&copy; | Jatin Manvar</p>
+        </center>
+    </div>
+</body>
+
+</html>
